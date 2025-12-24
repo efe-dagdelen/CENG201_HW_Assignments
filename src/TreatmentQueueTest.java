@@ -2,7 +2,7 @@ public class TreatmentQueueTest {
 
             public static void main(String[] args) {
 
-                System.out.println("Acil servis sırası başlıyor");
+                System.out.println("Emergency service queue begins");
                 TreatmentQueue Tqueue = new TreatmentQueue();
 
                 for (int i = 1; i <= 8; i++) {
