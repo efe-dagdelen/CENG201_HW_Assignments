@@ -6,7 +6,7 @@ public class TreatmentQueueTest {
                 TreatmentQueue Tqueue = new TreatmentQueue();
 
                 for (int i = 1; i <= 8; i++) {
-                    Tqueue.enqueue(new TreatmentRequest(i));
+                    Tqueue.enqueue(new TreatmentRequest(i , false));
 
                 }
                 System.out.println("Initial queue: ");

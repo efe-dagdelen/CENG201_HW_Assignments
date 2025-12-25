@@ -90,7 +90,34 @@ public class PatientList {
     }
 
 
+    public void sortPatientsBySeverity() {
+        if (head == null || head.next == null) {
+            return;
+        }
 
+        boolean swapped;
+        do {
+            swapped = false;
+            Node current = head;
+
+            while (current.next != null) {
+
+
+                if (current.data.getSeverity() < current.next.data.getSeverity()) {
+
+
+                    Patient temp = current.data;
+                    current.data = current.next.data;
+                    current.next.data = temp;
+
+                    swapped = true;
+                }
+                current = current.next;
+            }
+        } while (swapped);
+
+        System.out.println("The patient list was sorted according to severity level");
+    }
 
 
 }
