@@ -1,3 +1,5 @@
+package hospital_system;
+
 public class HospitalSystemTest {
 
     public static void main(String[] args) {

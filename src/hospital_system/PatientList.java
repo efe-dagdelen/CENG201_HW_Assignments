@@ -1,3 +1,5 @@
+package hospital_system;
+
 public class PatientList {
 
     public static class Node {
@@ -80,7 +82,7 @@ public class PatientList {
         }
         Node current = head;
         while (current != null) {
-            System.out.println("Patient id: " + current.data.getId() + " , "
+            System.out.println("hospital_system.Patient id: " + current.data.getId() + " , "
             + " Name: " + current.data.getName());
 
             current = current.next;

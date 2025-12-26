@@ -1,3 +1,5 @@
+package hospital_system;
+
 public class Patient {
 
     private final int id;                   //I defined the attributes.

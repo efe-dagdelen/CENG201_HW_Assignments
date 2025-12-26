@@ -1,3 +1,5 @@
+package hospital_system;
+
 public class TreatmentRequest {
 
     private int patientId;                        // id  of the patient
