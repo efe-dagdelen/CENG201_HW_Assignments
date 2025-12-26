@@ -1,4 +1,4 @@
-package hospital_system;
+
 
 public class TreatmentQueue {
 
@@ -103,7 +103,7 @@ public class TreatmentQueue {
             if (current.data != null) {
 
                 String type = current.data.isPriority() ? " [priority]" : " [normal]";
-                System.out.println("hospital_system.Patient id: " + current.data.getPatientId() + type);
+                System.out.println("Patient id: " + current.data.getPatientId() + type);
             }
             current = current.next;
         }

@@ -1,4 +1,4 @@
-package hospital_system;
+
 
 import java.util.HashMap;
 

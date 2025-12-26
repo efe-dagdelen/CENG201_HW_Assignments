@@ -1,4 +1,3 @@
-package hospital_system;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -39,7 +38,7 @@ public class DischargeRecord {
         SimpleDateFormat sdf = new SimpleDateFormat("dd MMM yyyy HH:mm");
         Date resultDate = new Date(dischargeTime);
 
-        return "hospital_system.DischargeRecord: " +
+        return "DischargeRecord: " +
                 "patientId=" + patientId +
                 ", dischargeTime=" + sdf.format(resultDate);
     }

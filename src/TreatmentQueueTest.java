@@ -1,4 +1,4 @@
-package hospital_system;
+
 
 public class TreatmentQueueTest {
 
