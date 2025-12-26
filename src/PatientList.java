@@ -1,5 +1,3 @@
-
-
 public class PatientList {
 
     public static class Node {
@@ -12,7 +10,7 @@ public class PatientList {
         }
     }
 
-    private Node head;
+    private Node head;         //the start of our linked list
 
     public PatientList() {               //constructor
         this.head = null;
@@ -21,14 +19,14 @@ public class PatientList {
 
     public void addPatient(Patient p) {
         Node patient = new Node(p);          // new node(patient)
-        if (head == null) {
+        if (head == null) {                  //if list is empty, this is the first one
             head = patient;
-        } else {
+        } else {                            //go to the end of the list
             Node current = head;
             while (current.next != null) {
                 current = current.next;
             }
-            current.next = patient;
+            current.next = patient;              // add the new patient to the end
 
         }
 
@@ -91,7 +89,7 @@ public class PatientList {
 
     }
 
-
+    //Sorting
     public void sortPatientsBySeverity() {
         if (head == null || head.next == null) {
             return;

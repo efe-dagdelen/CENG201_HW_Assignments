@@ -1,5 +1,3 @@
-
-
 import java.util.HashMap;
 
 
@@ -37,17 +35,17 @@ public class HospitalSystem {
 
     public void processTreatment() {
         TreatmentRequest request;
-        if (!priorityQueue.isEmpty()) {
+        if (!priorityQueue.isEmpty()) {                 //checking the priority queue first
             request = priorityQueue.dequeue();
         } else {
-            request = normalQueue.dequeue();
+            request = normalQueue.dequeue();              //if no emergencies, look at the normal queue
         }
         if (request == null) {
             System.out.println("No Treatment Request to Process");
             return;
         }
 
-        Patient patient = patientMap.get(request.getPatientId()); // Find the patient by ID.
+        Patient patient = patientMap.get(request.getPatientId()); //find the patient by id
 
         if (patient != null) {
             dischargeStack.push(new DischargeRecord(patient.getId()));

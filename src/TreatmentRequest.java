@@ -1,5 +1,3 @@
-
-
 public class TreatmentRequest {
 
     private int patientId;                        // id  of the patient

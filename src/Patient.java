@@ -1,10 +1,10 @@
+public class Patient {                           //patient class
 
+                                                //I defined the attributes.
 
-public class Patient {
-
-    private final int id;                   //I defined the attributes.
+    private final int id;                       //I used 'final' here because the ID won't change.
     private String name;
-    private int severity;
+    private int severity;                       //Range: 1-10
     private int age;
 
 
@@ -23,7 +23,7 @@ public class Patient {
 
         }
 
-        public int getId() {                     //get methods
+        public int getId() {                     //getter methods to access private data
             return id;
         }
         public String getName() {
@@ -35,6 +35,8 @@ public class Patient {
         public int getAge() {
             return age;
         }
+
+
 
         public void setAge(int age) {              //set methods
             this.age = age;

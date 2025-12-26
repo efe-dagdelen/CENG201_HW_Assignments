@@ -1,5 +1,3 @@
-
-
 public class TreatmentQueue {
 
 
@@ -41,12 +39,12 @@ public class TreatmentQueue {
             tail = nNode;
         }
 
-        else if (!request.isPriority()) {
+        else if (!request.isPriority()) {       //normal patient (not priority)
             tail.next = nNode;
             tail = nNode;
         }
 
-        else {
+        else {                                //priority patient
 
             if (!head.data.isPriority()) {
                 nNode.next = head;
@@ -74,7 +72,7 @@ public class TreatmentQueue {
 
 
     public TreatmentRequest dequeue() {              //Dequeue ( removing the first)
-        if (head == null) return null;
+        if (head == null) return null;               //(FIFO)
 
         TreatmentRequest data = head.data;
         head = head.next;

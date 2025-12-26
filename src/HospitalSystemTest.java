@@ -1,12 +1,10 @@
-
-
 public class HospitalSystemTest {
 
     public static void main(String[] args) {
-        HospitalSystem hs = new HospitalSystem();
+        HospitalSystem hs = new HospitalSystem();    //creating the main system object
 
 
-        hs.addPatient(new Patient(1, "Hüseyin", 5, 33));      // Adding 10 patient with varying severity levels and ages.
+        hs.addPatient(new Patient(1, "Hüseyin", 5, 33));      //adding 10 patient with varying severity levels and ages
         hs.addPatient(new Patient(2, "Davut", 4, 65));
         hs.addPatient(new Patient(3, "Sefa", 9, 19));
         hs.addPatient(new Patient(4, "Ali", 8, 25));
@@ -19,12 +17,12 @@ public class HospitalSystemTest {
 
 
 
-        hs.addTreatmentRequest(new TreatmentRequest(1,false));          //5 priority patients and 3 normal patients were added.
+        hs.addTreatmentRequest(new TreatmentRequest(1,false));          //5 priority patients and 3 normal patients were added
         hs.addTreatmentRequest(new TreatmentRequest(2,false));
-        hs.addTreatmentRequest(new TreatmentRequest(3,true));
-        hs.addTreatmentRequest(new TreatmentRequest(4,true));
+        hs.addTreatmentRequest(new TreatmentRequest(3,true));      //emergency
+        hs.addTreatmentRequest(new TreatmentRequest(4,true));       // emergency
         hs.addTreatmentRequest(new TreatmentRequest(5,false));
-        hs.addTreatmentRequest(new TreatmentRequest(6,true));
+        hs.addTreatmentRequest(new TreatmentRequest(6,true));       // emergency
         hs.addTreatmentRequest(new TreatmentRequest(7,false));
         hs.addTreatmentRequest(new TreatmentRequest(8,false));
 
@@ -35,12 +33,12 @@ public class HospitalSystemTest {
 
 
 
-        hs.addDischargeRecord(15);            //Add 2 discharge records.
+        hs.addDischargeRecord(15);            //add 2 discharge records
         hs.addDischargeRecord(20);
 
 
 
-        hs.processTreatment();                     //Process 4 treatment requests
+        hs.processTreatment();                     //process 4 treatment requests
         hs.processTreatment();
         hs.processTreatment();
         hs.processTreatment();

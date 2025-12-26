@@ -1,5 +1,3 @@
-
-
 public class TreatmentQueueTest {
 
             public static void main(String[] args) {
@@ -7,12 +5,12 @@ public class TreatmentQueueTest {
                 System.out.println("Emergency service queue begins");
                 TreatmentQueue Tqueue = new TreatmentQueue();
 
-                for (int i = 1; i <= 8; i++) {
+                for (int i = 1; i <= 8; i++) {                      //add 8 requests so I used a loop for that
                     Tqueue.enqueue(new TreatmentRequest(i , false));
 
                 }
                 System.out.println("Initial queue: ");
-                Tqueue.printQueue();
+                Tqueue.printQueue();           //printing the full list
 
 
 
@@ -26,10 +24,6 @@ public class TreatmentQueueTest {
                 Tqueue.printQueue();
 
             }
-
-
-
-
 
 
 

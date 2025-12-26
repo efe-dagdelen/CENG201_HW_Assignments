@@ -1,5 +1,3 @@
-
-
 public class DischargeStack {
 
 
@@ -13,7 +11,7 @@ public class DischargeStack {
         }
     }
 
-      private Node top;
+      private Node top;           //the top of the stack
     private int size;
 
 
@@ -22,7 +20,7 @@ public class DischargeStack {
         this.size = 0;
     }
 
-    public void push(DischargeRecord record) {
+    public void push(DischargeRecord record) {        //(LIFO)
         Node nNode = new Node(record);
         nNode.next = top;
         top = nNode;
@@ -30,9 +28,9 @@ public class DischargeStack {
     }
 
     public DischargeRecord pop() {
-        if (top == null) return null;
+        if (top == null) return null;   //nothing to pop
 
-        DischargeRecord dt = top.data;  // Remove the top element's data permanently
+        DischargeRecord dt = top.data;  //remove the top elements data permanently
         top = top.next;
         size--;
         return dt;
